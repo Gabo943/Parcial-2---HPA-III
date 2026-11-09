@@ -18,10 +18,10 @@ Sistema de login desarrollado en C# con Windows Forms, implementado bajo una **a
 
 ### Interfaz Principal
 
-![Interfaz de Login]
+\\Interfaz de Login
 <img width="797" height="501" alt="image" src="https://github.com/user-attachments/assets/c9c9670c-81da-448b-8d95-18f050b55ecd" />
 
-![Interfaz Principal del Sistema]
+\\Interfaz Principal del Sistema
 <img width="1294" height="652" alt="image" src="https://github.com/user-attachments/assets/d781eb5d-0728-4e64-a4cd-f17c465ab6e6" />
 
 - **Login con validación de credenciales:** Se implementó un formulario de inicio de sesión (`frmLogin`) que valida usuario y contraseña contra una tabla `t_usuario` en SQL Server. La contraseña ingresada por el usuario se compara contra un hash SHA-512 almacenado, en lugar de texto plano.
@@ -30,8 +30,9 @@ Sistema de login desarrollado en C# con Windows Forms, implementado bajo una **a
 ## Estructura de Carpetas o Directorios
 ```
 Solution/
-├── Entidad/              # Clases de entidad (E_Usuarios) — modelos de datos puros
 ├── Datos/                # Acceso a datos: conexión a SQL Server y consultas (D_Conexion, D_Usuario)
+├── Entidad/              # Clases de entidad (E_Usuarios) — modelos de datos puros
+├── GeneradorHash/        # (IGNORAR) Clases Usada para crear el hash de la contraseña 
 ├── Negocio/               # Lógica de negocio y reglas de la aplicación
 │   ├── Contratos/          # Interfaces: IHashService, IVerificarHashService
 │   ├── Servicios/          # Implementaciones: Sha512HashService
@@ -65,6 +66,6 @@ Solution/
 ## Referencias
 
 - Documentos proporcionados por la profesora Irina Fong
-- [Video de Apoyo para la interfaz Principal] (https://youtu.be/y1jftnTaTXU?si=A60b7ZULj4t7kPfj)
-- [Video de Apoyo para la interfaz Login] (https://youtu.be/rX2AmgIqmy0?si=Oq6z5ix93PlsMcvx)
+- [Video de Apoyo para la interfaz Principal](https://youtu.be/y1jftnTaTXU?si=A60b7ZULj4t7kPfj)
+- [Video de Apoyo para la interfaz Login](https://youtu.be/rX2AmgIqmy0?si=Oq6z5ix93PlsMcvx)
 - [Win32OpenSSL](https://slproweb.com/products/Win32OpenSSL.html)
