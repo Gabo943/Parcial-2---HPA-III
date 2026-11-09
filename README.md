@@ -18,10 +18,13 @@ Sistema de login desarrollado en C# con Windows Forms, implementado bajo una **a
 
 ### Interfaz Principal
 
-\\Interfaz de Login
+Interfaz de Login:\
 <img width="797" height="501" alt="image" src="https://github.com/user-attachments/assets/c9c9670c-81da-448b-8d95-18f050b55ecd" />
 
-\\Interfaz Principal del Sistema
+Interfaz de Login - ERROR:\
+<img width="801" height="498" alt="image" src="https://github.com/user-attachments/assets/7c50d222-859d-4dac-81aa-c9923802dd02" />
+
+Interfaz Principal del Sistema:\
 <img width="1294" height="652" alt="image" src="https://github.com/user-attachments/assets/d781eb5d-0728-4e64-a4cd-f17c465ab6e6" />
 
 - **Login con validación de credenciales:** Se implementó un formulario de inicio de sesión (`frmLogin`) que valida usuario y contraseña contra una tabla `t_usuario` en SQL Server. La contraseña ingresada por el usuario se compara contra un hash SHA-512 almacenado, en lugar de texto plano.
@@ -38,7 +41,8 @@ Solution/
 │   ├── Servicios/          # Implementaciones: Sha512HashService
 │   └── N_Usuario.cs        # Orquesta la autenticación (obtiene usuario + verifica hash)
 ├── Presentacion/          # Interfaz gráfica (Windows Forms): frmLogin, frmPrincipal
-└── README.md               # Documentación del proyecto
+├── README.md               # Documentación del proyecto
+└── db_sistema_login.sql    #Script sql de la base de datos utilizada
 ```
 
 ## Instrucciones de Ejecución / Uso
