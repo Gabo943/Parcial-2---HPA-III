@@ -44,7 +44,7 @@ Solution/
 
 1. **Clonar el repositorio:**
    ```
-   git clone [PLACEHOLDER: URL del repositorio]
+   git clone https://github.com/Gabo943/Parcial-2---HPA-III
    ```
 2. **Configurar el entorno local:**
    - Abrir `Solution.sln` en Visual Studio.
